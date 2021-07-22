@@ -10,8 +10,7 @@ function App() {
     <Router>
       <div className="App">
         <header className="App-header">
-          <Link to="/">Home</Link>
-          <Link to="/otherpage">Other Page</Link>
+          <Link to="/">Fibonacci Calculator</Link>
         </header>
         <div>
           <Route exact path="/" component={Fib} />
