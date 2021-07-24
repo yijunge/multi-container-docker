@@ -1,6 +1,6 @@
 # Multi-container docker
 
-#### Deploy a multi-container-docker application to AWS
+## Deploy a multi-container-docker application to AWS
 ![application](./screenshots/application.png "application")
 
 The application uses several docker containers, including a <strong>React</strong> front-end UI container, a <strong>NodeJS</strong> back-end api container, a <strong>Redis</strong> container storing information about the calculated results, a <strong>PostgreSQL</strong> container permanently storing the indexes that have been calculated before, a worker container which is essentially another <strong>NodeJS</strong> back-end container responsible for implementing the logic of calculating Fibonacci numbers and a <strong>Nginx</strong> container in charge of routing incoming HTTP requests.
@@ -11,7 +11,7 @@ The workflow is as such: when a HTTP request reaches the front-end, the Nginx co
 |:--:|
 | *Workflow Diagram*|
 
-The deployment follows a <strong>CI/CD</strong> pipeline workflow using <strong>Github<strong>, <strong>TravisCI<strong>, and <strong>AWS</strong> that will automatically deploy the application after changes are made.
+The deployment follows a <strong>CI/CD</strong> pipeline workflow using <strong>Github</strong>, <strong>TravisCI</strong>, and <strong>AWS</strong> that will automatically deploy the application after changes are made.
 
 
 The whole process requires the following steps:
